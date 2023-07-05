@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site de Comida</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+
+  <style>
+    body {
+      background-color: #eeb600;
+    }
+
+    .jumbotron {
+      background-image: url("img/img01.jpg");
+      background-size: cover;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .jumbotron h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .jumbotron p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .card-img-top {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .card-text {
+      margin-bottom: 20px;
+    }
+
+    /* Adicionando estilos para os links no navbar */
+    .navbar-nav .nav-link {
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+   
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+  
+    footer {
+      background-color: #f8f9fa;
+      color: #6c757d;
+      font-size: 14px;
+      padding: 20px 0;
+    }
+  </style>
+  
+  
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Site de Comida</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pizza Grande</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Brotinho</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobremesas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-4">
+    <div class="jumbotron">
+      <h1>Bem-vindo ao Site de Comida!</h1>
+      <p>Confira nossas deliciosas opções de pratos.</p>
+    </div>
+
+    <h2>Pizzas</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img/img02.jpg" class="card-img-top" alt="Pizza 1">
+          <div class="card-body">
+            <h5 class="card-title">Pizza Margherita</h5>
+            <p class="card-text">Uma deliciosa pizza com molho de tomate, queijo mozzarella e manjericão.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img/img03.jpg" class="card-img-top" alt="Pizza 2">
+          <div class="card-body">
+            <h5 class="card-title">Pizza Pepperoni</h5>
+            <p class="card-text">Uma saborosa pizza com molho de tomate, queijo mozzarella e pepperoni.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img/img04.jpg" class="card-img-top" alt="Pizza 3">
+          <div class="card-body">
+            <h5 class="card-title">Pizza 4 Queijos</h5>
+            <p class="card-text">Uma incrível pizza com molho de tomate e quatro queijos diferentes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-light text-center p-3">
+    <p>&copy; 2023 Site de Comida. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Inclua os arquivos JavaScript do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
